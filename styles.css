@@ -64,3 +64,64 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     width: 100%;
 }
+
+.footer-images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-images .rodape-img {
+  /* justify-content: space-evenly; */
+  width: 25%;
+}
+
+.footer-images .rodape-img img{
+  height: 400px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #91D3C5;
+  
+  /* background-color: hsl(198, 62%, 26%); */
+  padding-top: 40px;
+}
+
+.footer-bottom h2, .footer-bottom a{
+  color: hsl(168, 34%, 41%);
+}
+
+.footer-bottom h2 {
+  margin-bottom: 30px;
+  font-family: Fraunces, serif;
+  font-weight: 800;
+}
+
+.footer-bottom .footer-servicos {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 40px;
+  font-family: Barlow, sans-serif;
+  font-size: 16px;
+}
+.footer-bottom .footer-servicos a:hover{
+  color: white;
+}
+
+.footer-bottom .footer-icons {
+  display: flex;
+  gap: 25px;
+  padding-bottom: 50px;
+}
+
+.footer-bottom .footer-icons img:hover{
+  background-color: white;
+}
+
+
