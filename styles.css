@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 .banner {
   background: url(../images/desktop/image-header.jpg), no-repeat;
   background-size: cover;
-  /* background-position: 0 -100px; */
+  background-position: 50% 0;
   position: relative;
   height: 100vh;
 }
@@ -113,10 +113,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
-  height: 500px;
+  height: 600px;
   padding: 0 25px;
+}
+
+.banner__testimonial h2 {
+  text-transform: uppercase;
+  color: #C4C3C1;
 }
 
 .banner__avatar {
