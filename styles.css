@@ -64,3 +64,21 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     width: 100%;
 }
+
+.banner {
+    background: url(../images/desktop/image-header.jpg), no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+    position: relative;
+    height: 100vh;
+  }
+
+.banner__title {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+}
