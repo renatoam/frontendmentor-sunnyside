@@ -22,7 +22,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
-  background-color: #44bef8;
+  /* background-color: #44bef8; */
+  z-index: 1;
+  position: absolute;
+  width: 100%;
 }
 
 .logo {
@@ -68,14 +71,17 @@ h1, h2, h3, h4, h5, h6 {
 .banner {
   background: url(../images/desktop/image-header.jpg), no-repeat;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 50%;
   position: relative;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner__title {
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -115,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  height: 600px;
+  height: 100vh;
   padding: 0 25px;
 }
 
