@@ -147,6 +147,21 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(0, 0%, 100%);
 }
 
+@media (max-width: 600px) {
+  
+  .banner__title {
+    justify-content: space-between;
+    top: 100px;
+    position: absolute;
+    height: 250px;
+  }
+  
+  .banner__title h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
 .banner__grid {
   display: flex;
   flex-direction: column;
@@ -187,6 +202,29 @@ h1, h2, h3, h4, h5, h6 {
 #banner_text a {
   text-transform: uppercase;
 }
+
+/* Media */
+
+@media (max-width: 600px) {
+  .banner__products {
+    flex-direction: column-reverse;
+  }
+
+  .banner__products:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .banner__products .banner_img {
+    width: 100%;
+  }
+
+  #banner_text {
+    text-align: center;
+    padding: 50px;
+  }
+}
+
+/* Media  */
 
 .banner__testimonial {
   display: flex;
@@ -237,6 +275,41 @@ h1, h2, h3, h4, h5, h6 {
 .banner__cards img {
   width: 25%
 }
+
+/* Media */
+
+@media (max-width: 600px) {
+  .banner__testimonial {
+    height: 60rem;
+    padding: 2rem 1rem;
+  }
+
+  .banner__testimonial h2 {
+    padding: 1rem 0px;
+    font-size: 1rem;
+  }
+
+  .banner__avatar {
+    flex-direction: column;
+    gap: 	2rem;
+  }
+
+  .banner__avatar div {
+    justify-content: space-between;
+    height: 16rem; 
+  }
+
+  .banner__cards {
+    height: 33rem;
+  }
+
+  .banner__cards img {
+    width: 50%;
+  }
+
+}
+
+/* Media */
 
 .footer-section-top {
   width: 100%;
@@ -295,4 +368,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
 }
 
+@media (max-width: 600px) {
+  .logo__footer {
+    width: 230px;
+    padding: 1rem;
+  }
 
+  .logo__footer img {
+    width: 100%;
+  }
+
+  .footer-section-bottom {
+    height: 20rem;
+  }
+}
